@@ -1,19 +1,19 @@
 export const agendaShows = [
     {
-        dia: '23',
+        dia: '29',
         mes: 'julho',
         local: 'Vila Mimosa - sao cristovao',
-        hora: '21:00'
+        hora: '23:00'
     },
     {
-        dia: '26',
+        dia: '30',
         mes: 'julho',
         local: 'Hangar 110 - sao paulo',
         hora: '22:00'
     },
     {
-        dia: '29',
-        mes: 'julho',
+        dia: '01',
+        mes: 'Agosto',
         local: 'Copacabana - Praia post 4',
         hora: '00:00'
     },
