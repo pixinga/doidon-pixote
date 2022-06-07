@@ -1,11 +1,8 @@
 import styled from '@emotion/styled'
-import { Grid, Link, List, ListItemButton, Stack } from '@mui/material'
-import { Box } from '@mui/system'
-import React, { FC } from 'react'
+import { Grid, Link, Stack } from '@mui/material'
+import  { FC } from 'react'
 import { FlexSpacer } from '../../atoms/FlexSpacer'
 import Typography from '../../atoms/Typography'
-import ImgSwiper from '../../molecules/ImgSwiper'
-
 
 interface HeroProps {
   isMobile?: any

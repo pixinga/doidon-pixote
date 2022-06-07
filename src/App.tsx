@@ -6,10 +6,6 @@ import './styles/globals.css';
 import './styles/mui-overrides.css';
 import { Loader } from './design-system/_common/Loader';
 
-import { useGetPosts } from './lib/api-hooks';
-import { FetchState } from './types';
-
-
 interface AppProps {
   name?: any
   children?: Element
@@ -19,13 +15,7 @@ interface AppProps {
 
 
 
-const App: FC<AppProps> = ({ children,
-  ebconfig,
-  options }) => {
-    const [posts, fetchState, getPosts] = useGetPosts();
-
-
-
+const App: FC<AppProps> = () => {
 
   const [data, setData] = useState(false);
 
@@ -33,7 +23,7 @@ const App: FC<AppProps> = ({ children,
   const setDataTimeout = () => {
     setTimeout(() => {
       setData(true);
-      getPosts()
+    
     }, 3500);
   }
 
@@ -53,39 +43,7 @@ const App: FC<AppProps> = ({ children,
 
       <ThemeProvider theme={theme}>
         <Router />
-        {!data ?  <Loader /> : ''}
-
-        {fetchState === FetchState.DEFAULT && (
-        <>
-          <p>
-            Hello there, click the button below to get the list of posts from
-            the API.
-          </p>
-          <button onClick={getPosts}>Get Posts</button>
-        </>
-      )}
-      {fetchState === FetchState.LOADING && <p>Fetching posts...</p>}
-      {fetchState === FetchState.ERROR && (
-        <>
-          <p>Oops! Something went wrong. Please try again.</p>
-          <button onClick={getPosts}>Get Posts</button>
-        </>
-      )}
-      {fetchState === FetchState.SUCCESS && (
-        <>
-          <p>Here's the list of posts:</p>
-          <ul className="posts-list">
-            {posts.map((post) => (
-              <li key={post.id} className="post">
-                <h3>
-                  {post.id} - {post.title}
-                </h3>
-                <p>{post.body}</p>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+        {!data ?  <Loader /> : ''} 
  
       </ThemeProvider>
     </div>
