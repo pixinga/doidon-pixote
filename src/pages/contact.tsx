@@ -92,6 +92,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           <Typography size='h6'>
             {'Mercado Livre [link aqui]'}
           </Typography>
+          <FlexSpacer minHeight={6} />
         </Grid>
       </Grid>
 
