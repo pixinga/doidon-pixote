@@ -1,7 +1,7 @@
 export const agendaShows = [
     {
         dia: '19',
-        mes: 'Jumho',
+        mes: 'Junho',
         local: 'Heavy Beer - Rua Ceara',
         hora: '23:00'
     },
