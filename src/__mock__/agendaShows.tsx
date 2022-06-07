@@ -1,6 +1,6 @@
 export const agendaShows = [
     {
-        dia: '23',
+        dia: '22',
         mes: 'julho',
         local: 'Vila Mimosa - sao cristovao',
         hora: '21:00'
