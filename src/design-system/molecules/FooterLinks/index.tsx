@@ -14,7 +14,7 @@ const FooterLinks = () => {
         <Grid container>
 
             <Grid item xs={12} md={3}>
-                <Typography size="h4">Sitemap</Typography>
+                <Typography size="h3" weight='old' ml={2}>Links</Typography>
 
                 <List sx={{textTransform: 'capitalize', alignSelf: 'center'}}>
                     <Stack direction="column">
@@ -53,7 +53,7 @@ const FooterLinks = () => {
             </Grid>
 
             <Grid item xs={12} md={3}>
-                <Typography size="h4">Mais sobre</Typography>
+                <Typography size="h3" weight='old' ml={2}>Saiba mais</Typography>
 
                 <List sx={{ alignSelf: 'center', textTransform: 'capitalize', }}>
                     <Stack direction="column">
@@ -62,6 +62,8 @@ const FooterLinks = () => {
                         >
                             <Link to="#home" smooth>
                                 <Typography size="body">historia</Typography>
+                                <Typography size="small">em breve</Typography>
+
                             </Link>
                         </StyledListItem>
                         <StyledListItem
@@ -69,6 +71,7 @@ const FooterLinks = () => {
                         >
                             <Link to="#agenda" smooth>
                                 <Typography size="body">formação</Typography>
+                                <Typography size="small">em breve</Typography>
 
                             </Link>
                         </StyledListItem>

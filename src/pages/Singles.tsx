@@ -25,11 +25,6 @@ const Singles: FC<SinglesProps> = ({ pageWidth }) => {
             </Typography>
             <FlexSpacer minHeight={3} />
 
-
-            <Typography size='h3' weight='old'>
-                Singles
-            </Typography>
-
             <FlexSpacer minHeight={3} />
 
             <Grid container spacing={4} margin="0 auto">
