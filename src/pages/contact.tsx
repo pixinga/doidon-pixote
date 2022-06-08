@@ -16,7 +16,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
   const Container = styled(Box)`
       width: ${pageWidth};
       padding: 0 3rem;
-      background: #1e1e1e;
+      background: #161616;
 
       @media (max-width: 600px) {
         padding: 0 1.5rem;
