@@ -13,7 +13,6 @@ const FooterLinks = () => {
     return (
 
         <Grid container>
-
             <Grid item xs={12} sm={6} md={3}>
                 <Typography size="h3" weight='old'>Links</Typography>
 

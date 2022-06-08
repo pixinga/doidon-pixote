@@ -41,6 +41,8 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
 
     return (
         <StyledFooter>
+            <FlexSpacer minHeight={1} />
+
             <Stack direction="row" justifyContent="space-between" p={0}>
                 <Grid container justifyContent="space-between">
                     <Grid item xs={12} md={9}>
@@ -67,7 +69,7 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
 
                     </Grid>
                 </Grid>
-            </Stack>        
+            </Stack>
         </StyledFooter>
     )
 }

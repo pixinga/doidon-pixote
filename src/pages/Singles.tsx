@@ -23,7 +23,6 @@ const Singles: FC<SinglesProps> = ({ pageWidth }) => {
             <Typography size='h2' weight='old'>
                 Discografia
             </Typography>
-            <FlexSpacer minHeight={3} />
 
             <FlexSpacer minHeight={3} />
 

@@ -33,7 +33,6 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
       <FlexSpacer minHeight={3} />
 
       <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" >
-
         {!isMobile &&
           <img src="/images/foto_vert.jpg" alt="logo" width="50%" />
           // <ImgSwiper />

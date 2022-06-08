@@ -18,7 +18,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
 
   const HeroImage = styled(Stack)`
     // background: linear-gradient(to left top, #000000ba, #ff000094),url(/images/foto_horiz.jpg) no-repeat 50% 50%;
-     background: url(/images/foto_horiz.jpg) no-repeat 50% 50%;
+     background: url(/images/foto_horiz-min.jpg) no-repeat 50% 50%;
     background-size: cover;
     filter: brightness(50%);
     box-shadow:   inset 0 24px 36px  40px  rgba(0,0,0,.);

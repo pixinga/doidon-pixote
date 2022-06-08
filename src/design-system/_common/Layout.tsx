@@ -50,7 +50,6 @@ export const Layout: FC<LayoutProps> = ({
 
         <Contact />
 
-        <FlexSpacer minHeight={3} />
         <Footer pageWidth={pageWidth} />
         <CopyrightFoot pageWidth={pageWidth} />
       </article >
