@@ -17,7 +17,8 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
   `
 
   const HeroImage = styled(Stack)`
-    background: linear-gradient(to left top, #000000ba, #ff000094),url(/images/foto_horiz.jpg) no-repeat 50% 50%;
+    // background: linear-gradient(to left top, #000000ba, #ff000094),url(/images/foto_horiz.jpg) no-repeat 50% 50%;
+     background: url(/images/foto_horiz.jpg) no-repeat 50% 50%;
     background-size: cover;
     filter: brightness(50%);
     box-shadow:   inset 0 24px 36px  40px  rgba(0,0,0,.);
@@ -43,20 +44,6 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
         <Stack direction="column" marginTop={{ xs: '0', md: "auto" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
 
           {!isMobile ? <>
-            {/* <Stack direction={{ sx: 'column', md: 'row' }}>
-
-                <Typography size='h1' weight='old' sx={{ transform: 'rotate(3deg)', marginBottom: '-3rem', textShadow: '2px 7px 5px #0000008a' }}>
-                  Doidon
-                </Typography>
-
-                <Typography size='h1' weight='old' sx={{ transform: 'rotate(-7deg)', marginBottom: '1rem', fontSize: '9rem', marginLeft: '2rem' ,textShadow: '2px 7px 5px #0000008a'}}>
-                  Pixote
-                </Typography>
-              </Stack>
-
-              <Typography size='h4' weight='old' sx={{ transform: 'rotate(-7deg)', marginBottom: '6rem', fontSize: '3rem', marginLeft: '2rem', textShadow: '2px 7px 5px #0000008a' }}>
-                e os Van der Zicrey
-              </Typography> */}
             <Typography size='h3' weight='old'>Bem-vindo ao</Typography>
 
             <Typography size='h1' weight='old'
@@ -65,13 +52,14 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
             <Typography size='h2' weight='old'> e os Van der Zicrey</Typography>
           </>
             : <>
-              <Typography size='h1' weight='old'>Doidon</Typography>
-              <Typography size='h1' weight='old'>Pixote</Typography>
-              <Typography size='h4' weight='old'> e os Van der Zicrey</Typography>
+              <Typography size='h3' weight='old'>Bem-vindo ao</Typography>
+              <Typography size='h2' weight='old'>Doidon</Typography>
+              <Typography size='h2' weight='old'>Pixote</Typography>
+              <Typography size='h3' weight='old'> e os Van der Zicrey</Typography>
             </>
           }
 
-          <Grid container spacing={2} rowSpacing={2} mt={3} maxWidth={{xs: "70%"}}>
+          <Grid container spacing={2} rowSpacing={2} mt={3} mb={5} maxWidth={{ xs: "70%" }}>
 
             <Grid item direction="row">
 

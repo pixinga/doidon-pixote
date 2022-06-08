@@ -1,16 +1,16 @@
-import { FC, FunctionComponentElement } from "react";
-import Chip from "@mui/material/Chip";
+import { FC } from "react";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem/ListItem";
 import { styled } from "@mui/material/styles";
 
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { HashLink as Link } from 'react-router-hash-link';
 
 
-const drawerWidth = 200;
+const drawerWidth = '100%';
 
 interface NavigationProps {
   open?: boolean;
@@ -86,17 +86,17 @@ const StyledListItem = styled(ListItem)`
   }
 `;
 
- 
 
-export const MobileNavItems: FC  = ({  ...props }) => {
+
+export const MobileNavItems: FC = ({ ...props }) => {
   const navigate = useNavigate();
 
 
   return (
     <Box className="navigation">
       <StyledList style={{ margin: '0 10px' }}>
-        <NavLink to="#videos"
-          className={({ isActive }) => (isActive ? "active" : "")}
+        <Link
+          to="/#videos"
           style={{
             minHeight: 48,
             padding: 1
@@ -108,15 +108,14 @@ export const MobileNavItems: FC  = ({  ...props }) => {
                 minWidth: 0,
                 mr: 3,
               }}>
-               
+
               </ListItemIcon>
               <ListItemText primary="Videos" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
-        </NavLink>
- 
-        <NavLink to="#agenda"
-          className={({ isActive }) => (isActive ? "active" : "")}
+        </Link>
+
+        <Link to="#agenda"
           style={{
             minHeight: 48,
             padding: 1
@@ -128,15 +127,14 @@ export const MobileNavItems: FC  = ({  ...props }) => {
                 minWidth: 0,
                 mr: 3,
               }}>
-               
+
               </ListItemIcon>
               <ListItemText primary="Agenda" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
-        </NavLink>
+        </Link>
 
-        <NavLink to="#contact"
-          className={({ isActive }) => (isActive ? "active" : "")}
+        <Link to="#contact"
           style={{
             minHeight: 48,
             padding: 1
@@ -148,12 +146,12 @@ export const MobileNavItems: FC  = ({  ...props }) => {
                 minWidth: 0,
                 mr: 3,
               }}>
-               
+
               </ListItemIcon>
               <ListItemText primary="Contato" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
-        </NavLink>
+        </Link>
 
       </StyledList>
     </Box>

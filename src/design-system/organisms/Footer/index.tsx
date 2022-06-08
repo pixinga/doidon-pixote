@@ -22,7 +22,11 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
     const StyledFooter = styled.footer`       
         maxWidth: ${pageWidth};
         bottom: 0;
-        margin: 0 3rem;
+        padding: .5rem 3rem;
+
+        @media (max-width: 600px) {
+             padding: 0 1.5rem;
+        }
     `
     const StyledImage = styled.img`
        width: 20px;
@@ -63,18 +67,7 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
 
                     </Grid>
                 </Grid>
-
-
-            </Stack>
-            <Grid container flexDirection={isMobile ? 'column-reverse' : 'inherit'}>
-                <Grid item xs={12} md={6}>
-                    <Typography size='small'>Desenvovedor {' - '} <a href="http://cortesdev.de" target="_blank">{' '} CortesDev.de</a></Typography>
-                </Grid>
-
-                <Grid item xs={12} sm={6}>
-                    <Copyright />
-                </Grid>
-            </Grid>
+            </Stack>        
         </StyledFooter>
     )
 }

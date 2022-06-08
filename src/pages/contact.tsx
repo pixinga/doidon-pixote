@@ -15,11 +15,18 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
 
   const Container = styled(Box)`
       width: ${pageWidth};
-      margin: 0 auto;
+      padding: 0 3rem;
+      background: #1e1e1e;
+
+      @media (max-width: 600px) {
+        padding: 0 1.5rem;
+      }
   `
 
   return (
     <Container id="contact" mb={4}>
+      <FlexSpacer minHeight={5} />
+
       <Typography size='h2' weight='old'>
         Contato
       </Typography>

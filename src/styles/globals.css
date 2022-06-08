@@ -20,6 +20,10 @@ a {
   cursor: pointer;
 }
 
+
+.footer-note a:hover {
+  text-decoration: underline !important;
+}
 /* a span {
   font-size: .8rem;
 } */

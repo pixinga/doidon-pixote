@@ -5,6 +5,9 @@ import { theme } from "../../styles/theme";
 import Header from "../organisms/Header";
 import Footer from "../organisms/Footer";
 import Hero from "../organisms/Hero";
+import CopyrightFoot from "../molecules/CopyrightFoot";
+import Contact from "../../pages/contact";
+import { FlexSpacer } from "../atoms/FlexSpacer";
 
 
 interface LayoutProps {
@@ -29,7 +32,7 @@ export const Layout: FC<LayoutProps> = ({
   ...props }) => {
 
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
- 
+
 
   return (
     <>
@@ -44,7 +47,12 @@ export const Layout: FC<LayoutProps> = ({
           {children}
         </Stack>
 
+
+        <Contact />
+
+        <FlexSpacer minHeight={3} />
         <Footer pageWidth={pageWidth} />
+        <CopyrightFoot pageWidth={pageWidth} />
       </article >
     </>
   );

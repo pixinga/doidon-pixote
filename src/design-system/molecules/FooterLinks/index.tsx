@@ -53,7 +53,7 @@ const FooterLinks = () => {
                 </List>
             </Grid>
 
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} mt={{xs: '2rem',md: 0}}>
                 <Typography size="h3" weight='old'>Saiba mais</Typography>
 
                 <List sx={{ alignSelf: 'center', textTransform: 'capitalize', }}>
