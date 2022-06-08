@@ -14,7 +14,7 @@ const FooterLinks = () => {
 
         <Grid container>
 
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Typography size="h3" weight='old'>Links</Typography>
 
                 <List sx={{textTransform: 'capitalize', alignSelf: 'center'}}>
@@ -53,7 +53,7 @@ const FooterLinks = () => {
                 </List>
             </Grid>
 
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Typography size="h3" weight='old'>Saiba mais</Typography>
 
                 <List sx={{ alignSelf: 'center', textTransform: 'capitalize', }}>

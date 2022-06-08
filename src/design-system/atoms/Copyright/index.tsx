@@ -1,13 +1,16 @@
-import { Box } from "@mui/material"
+import { Box, useMediaQuery } from "@mui/material"
+import { theme } from "../../../styles/theme";
 import Typography from "../Typography"
 
 export const Copyright = ({ ...props }) => {
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   return (
-    <Box alignSelf='end' textAlign="right" display="flex">
-      <Typography size="small" ml="auto"  mr="0" >
-        {'© '}
+    <Box alignSelf='end' textAlign={isMobile ? "left" : "right"} display="flex" my={isMobile ? "10px" : "0"}>
+      <Typography size="small" ml={isMobile ? 0 : 'auto'}  mr="0" >
+        Copyright {'© '}
         {`${new Date().getFullYear()} `}
-        Doidon Pixote <br /> todos os direitos reservados
+        Doidon Pixote - todos os direitos reservados
       </Typography>
     </Box>
   )
