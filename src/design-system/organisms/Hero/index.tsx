@@ -98,7 +98,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
               <Link
                 sx={{ paddingLeft: 0 }}
                 target="_blank"
-                href="https://www.amazon.de/music/player/artists/B083PV5JS6/doidon-pixote-e-os-van-der-zicrey">
+                href="https://www.amazon.com.br/music/player/artists/B083PV5JS6/doidon-pixote-e-os-van-der-zicrey">
                 <img src="/images/SVG/Amazon.svg" alt="amazon"
                   style={{ borderRadius: 5, border: '1px solid white' }}
                 />

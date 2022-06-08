@@ -25,8 +25,7 @@ const StyledAppBar = styled(AppBar)`
     position: sticky;
     background-color: ${theme.colors.black} !important;
     box-shadow: none;
-    border-radius: 4px;
-    border: 1px solid #D9D9D9;    
+    border-radius: 0;
     height: 70px;
     top: 0;    
     z-index: 9999;
@@ -34,7 +33,7 @@ const StyledAppBar = styled(AppBar)`
 
 
 
-const MobileNav: FC<MobileNavProps> = ({ }) => {
+const MobileNav: FC<MobileNavProps> = () => {
   type Anchor = 'top' | 'left' | 'bottom' | 'right';
   const navigate = useNavigate();
 
@@ -77,7 +76,7 @@ const MobileNav: FC<MobileNavProps> = ({ }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <StyledAppBar sx={{ width: isMobile ? '101vw' : '100%' }}>
+    <StyledAppBar sx={{ width: '100%' }}>
       <Stack direction="row"
         sx={{
           alignItems: 'center',
