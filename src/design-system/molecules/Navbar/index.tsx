@@ -28,6 +28,16 @@ const Navbar = () => {
                         <Typography size="h3" weight='old'>home</Typography>
                     </StyledLink>
                 </StyledListItem>
+
+                <StyledListItem
+                //  sx={{ transform: 'rotate(2deg)' }}
+                >
+                    <StyledLink to="#discografia" smooth>
+                        <Typography size="h3" weight='old'>discografia</Typography>
+                    </StyledLink>
+                </StyledListItem>
+
+
                 <StyledListItem
                 // sx={{ transform: 'scale(1.35) rotate(-5deg)' }}
                 >
