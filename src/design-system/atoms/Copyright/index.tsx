@@ -4,7 +4,7 @@ import Typography from "../Typography"
 export const Copyright = ({ ...props }) => {
   return (
     <Box alignSelf='end' textAlign="right" display="flex">
-      <Typography size="small" ml="auto"  mr="auto" >
+      <Typography size="small" ml="auto"  mr="0" >
         {'© '}
         {`${new Date().getFullYear()} `}
         Doidon Pixote <br /> todos os direitos reservados

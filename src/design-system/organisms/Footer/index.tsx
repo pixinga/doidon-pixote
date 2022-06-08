@@ -1,11 +1,10 @@
 import styled from '@emotion/styled'
-import { Box, Grid,  List, ListItem, ListItemButton, Stack } from '@mui/material'
+import {Link, Box, Grid, List, ListItem, ListItemButton, Stack } from '@mui/material'
 import { FC } from 'react'
-import { Navigate } from 'react-router-dom'
 import { Copyright } from '../../atoms/Copyright'
 import { FlexSpacer } from '../../atoms/FlexSpacer'
 import FooterLinks from '../../molecules/FooterLinks'
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 import { useNavigate } from "react-router-dom";
 import Typography from '../../atoms/Typography'
@@ -46,22 +45,22 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                     </Grid>
 
                     <Grid item xs={12} md={3}>
-                        <Stack direction="column" justifyContent="space-between" p={2} >
+                        <Stack direction="column" justifyContent="space-between" >
 
-                            <List >
+                            <List style={{ minWidth: '100px',maxWidth: '200px', marginLeft: 'auto' }}>
                                 <Stack direction="row">
                                     {linkData.map((item, index) => (
-                                        <ListItemButton component="a" target="_blank" href={item.url} sx={{ borderRadious: 50 }}>
+                                        <Link target="_blank" href={item.url} sx={{padding: '0 0 0 1rem', borderRadious: 50 }}>
                                             <StyledImage src={item.src} alt={item.alt} />
-                                        </ListItemButton>
+                                        </Link>
                                     ))}
                                 </Stack>
                             </List>
                         </Stack>
 
-                        <Link to="#home" smooth>
-                            <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: '0 3rem 2rem auto ' }} />
-                        </Link>
+                        <HashLink to="#home" smooth>
+                            <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: '1.8rem -.8rem 2rem auto ' }} />
+                        </HashLink>
 
                         <Copyright />
                     </Grid>
