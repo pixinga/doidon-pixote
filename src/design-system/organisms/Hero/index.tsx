@@ -53,8 +53,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
           </>
             : <>
               <Typography size='h3' weight='old'>Bem-vindo ao</Typography>
-              <Typography size='h2' weight='old'>Doidon</Typography>
-              <Typography size='h2' weight='old'>Pixote</Typography>
+              <Typography size='h2' weight='old'>Doidon Pixote</Typography>
               <Typography size='h3' weight='old'> e os Van der Zicrey</Typography>
             </>
           }
