@@ -6,6 +6,7 @@ import Typography from '../../atoms/Typography';
 
 
 const StyledListItem = styled(ListItem)`
+padding-left: 0;
 }`
 const FooterLinks = () => {
 
@@ -14,7 +15,7 @@ const FooterLinks = () => {
         <Grid container>
 
             <Grid item xs={12} md={3}>
-                <Typography size="h3" weight='old' ml={2}>Links</Typography>
+                <Typography size="h3" weight='old'>Links</Typography>
 
                 <List sx={{textTransform: 'capitalize', alignSelf: 'center'}}>
                     <Stack direction="column">
@@ -53,7 +54,7 @@ const FooterLinks = () => {
             </Grid>
 
             <Grid item xs={12} md={3}>
-                <Typography size="h3" weight='old' ml={2}>Saiba mais</Typography>
+                <Typography size="h3" weight='old'>Saiba mais</Typography>
 
                 <List sx={{ alignSelf: 'center', textTransform: 'capitalize', }}>
                     <Stack direction="column">
