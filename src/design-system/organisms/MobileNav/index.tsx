@@ -23,7 +23,6 @@ interface MobileNavProps {
 
 const StyledAppBar = styled(AppBar)`
     position: sticky;
-    background-color: ${theme.colors.black} !important;
     box-shadow: none;
     border-radius: 0;
     height: 70px;
