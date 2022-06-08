@@ -96,6 +96,35 @@ export const MobileNavItems: FC = ({ ...props }) => {
     <Box className="navigation">
       <StyledList style={{ margin: '0 10px' }}>
         <Link
+          to="/#home"
+          style={{
+            minHeight: 48,
+            padding: 1
+          }
+          }>
+          <StyledListItem sx={{ paddingLeft: '12px' }}>
+            <div style={{ display: 'inline-flex' }}  >
+              <ListItemText primary="Home" sx={{ fontSize: '14px' }} />
+            </div>
+          </StyledListItem>
+        </Link>
+
+        <Link
+          to="/#discografia"
+          style={{
+            minHeight: 48,
+            padding: 1
+          }
+          }>
+          <StyledListItem sx={{ paddingLeft: '12px' }}>
+            <div style={{ display: 'inline-flex' }}  >
+              <ListItemText primary="Discografia" sx={{ fontSize: '14px' }} />
+            </div>
+          </StyledListItem>
+        </Link>
+
+
+        <Link
           to="/#videos"
           style={{
             minHeight: 48,
@@ -104,12 +133,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
           }>
           <StyledListItem sx={{ paddingLeft: '12px' }}>
             <div style={{ display: 'inline-flex' }}  >
-              <ListItemIcon sx={{
-                minWidth: 0,
-                mr: 3,
-              }}>
-
-              </ListItemIcon>
               <ListItemText primary="Videos" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
@@ -123,12 +146,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
           }>
           <StyledListItem sx={{ paddingLeft: '12px' }}>
             <div style={{ display: 'inline-flex' }}  >
-              <ListItemIcon sx={{
-                minWidth: 0,
-                mr: 3,
-              }}>
-
-              </ListItemIcon>
               <ListItemText primary="Agenda" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
@@ -142,12 +159,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
           }>
           <StyledListItem sx={{ paddingLeft: '12px' }}>
             <div style={{ display: 'inline-flex' }}  >
-              <ListItemIcon sx={{
-                minWidth: 0,
-                mr: 3,
-              }}>
-
-              </ListItemIcon>
               <ListItemText primary="Contato" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>

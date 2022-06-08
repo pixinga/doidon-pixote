@@ -17,7 +17,7 @@ const Singles: FC<SinglesProps> = ({ pageWidth }) => {
   `
 
     return (
-        <Singles id="Singles">
+        <Singles id="discografia">
 
 
             <Typography size='h2' weight='old'>
