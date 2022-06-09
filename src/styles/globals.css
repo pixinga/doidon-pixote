@@ -189,7 +189,7 @@ ul {
 
 
 @media (max-width: 600px) {
-  .MuiGrid-item {
+ :root .MuiGrid-root .MuiGrid-item {
     padding-left: 0;
   }
 }
