@@ -41,7 +41,8 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
     ]
 
     return (
-        <StyledFooter>
+        <StyledFooter className="footer"
+        >
             <FlexSpacer minHeight={1} />
 
             <Stack direction="row" justifyContent="space-between" p={0}>
@@ -58,20 +59,20 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                                     {linkData.map((item, index) => (
                                         <Link
                                             target="_blank" href={item.url}
-                                            width={{xs: '30%', md: 'inherit'}}
+                                            width={{ xs: '30%', md: 'inherit' }}
                                             sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
-                                    <StyledImage src={item.src} alt={item.alt} />
-                                </Link>
+                                            <StyledImage src={item.src} alt={item.alt} />
+                                        </Link>
                                     ))}
+                                </Stack>
+                            </List>
                         </Stack>
-                    </List>
-            </Stack>
 
-            <HashLink to="#home" smooth>
-                <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
-            </HashLink>
+                        <HashLink to="#home" smooth>
+                            <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
+                        </HashLink>
 
-        </Grid>
+                    </Grid>
                 </Grid >
             </Stack >
         </StyledFooter >

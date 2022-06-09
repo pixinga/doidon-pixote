@@ -16,7 +16,6 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
         <Box bgcolor="#161616">
 
             <Grid container
-                className="footer-note"
                 flexDirection={isMobile ? 'column-reverse' : 'inherit'}
                 sx={{ padding: '.5rem 3rem' }}
             >
