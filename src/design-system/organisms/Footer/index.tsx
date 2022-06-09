@@ -5,10 +5,10 @@ import { Copyright } from '../../atoms/Copyright'
 import { FlexSpacer } from '../../atoms/FlexSpacer'
 import FooterLinks from '../../molecules/FooterLinks'
 import { HashLink } from 'react-router-hash-link';
-
 import { useNavigate } from "react-router-dom";
 import Typography from '../../atoms/Typography'
 import { theme } from '../../../styles/theme'
+import { socialMedia } from '../../../__mock__/socialMedia'
 
 interface FooterProps {
     pageWidth?: any
@@ -35,13 +35,6 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
         padding: 4px;
     `
 
-    const linkData = [
-        { src: '/images/SVG/twitter.svg', alt: 'twitter', url: 'https://www.twitter.com/doidonpixote' },
-        { src: '/images/SVG/facebook.svg', alt: 'facebook', url: 'https://www.facebook.com/doidonpixote' },
-        { src: '/images/SVG/insta.svg', alt: 'insta', url: 'https://www.instagram.com/doidonpixote' },
-        { src: '/images/SVG/spotify.svg', alt: 'spotify', url: 'https://open.spotify.com/artist/1H3kmZKczSXJ2jum4zrqR3' },
-    ]
-
     return (
         <StyledFooter className="footer"
         >
@@ -58,7 +51,7 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
 
                             <List style={{ minWidth: '100px', maxWidth: '100%', marginLeft: isMobile ? 'start' : 'auto' }}>
                                 <Stack direction="row">
-                                    {linkData.map((item, index) => (
+                                    {socialMedia.map((item, index) => (
                                         <Link
                                             target="_blank" href={item.url}
                                             width={{ xs: '30%', md: 'inherit' }}

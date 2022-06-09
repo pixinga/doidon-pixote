@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { Box, Grid, Link, Stack } from '@mui/material'
 import { FC } from 'react'
+import { musicPlayers } from '../../../__mock__/musicPlayers'
 import { FlexSpacer } from '../../atoms/FlexSpacer'
 import Typography from '../../atoms/Typography'
 
@@ -48,7 +49,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
         <Stack direction="column" marginTop={{ xs: '0', md: "auto" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
 
           {!isMobile ? <>
-            <Box ml={{xs: 1, md: 1.5}}>
+            <Box ml={{ xs: 1, md: 1.5 }}>
 
               <Typography size='h3' weight='old' mb={2}>Bem-vindo ao</Typography>
 
@@ -67,51 +68,19 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
           }
 
           <Grid container spacing={2} rowSpacing={2} ml={{ xs: .5 }} mt={3} mb={5} maxWidth={{ xs: "70%" }}>
-
-            <Grid item direction="row">
-
-              <Link
-                target="_blank"
-                href="https://open.spotify.com/artist/1H3kmZKczSXJ2jum4zrqR3">
-                <img src="/images/SVG/playSpotify.svg" alt="spotify"
-                  style={{ borderRadius: 5, border: '1px solid white' }}
-                />
-              </Link>
-            </Grid>
-
-
-            <Grid item direction="row" >
-              <Link
-                sx={{ paddingLeft: 0 }}
-                target="_blank"
-                href="https://www.deezer.com/de/artist/82755592">
-                <img src="/images/SVG/deezer.svg" alt="deezer"
-                  style={{ borderRadius: 5, border: '1px solid white' }}
-                />
-              </Link>
-            </Grid>
-
-            <Grid item direction="row">
-              <Link
-                sx={{ paddingLeft: 0 }}
-                target="_blank"
-                href="https://www.youtube.com/channel/UC0eWlr8seMGNJBNbOyaDkTQ">
-                <img src="/images/SVG/youtube.svg" alt="youtube"
-                  style={{ borderRadius: 5, border: '1px solid white' }}
-                />
-              </Link>
-            </Grid>
-
-            <Grid item direction="row">
-              <Link
-                sx={{ paddingLeft: 0 }}
-                target="_blank"
-                href="https://www.amazon.com.br/music/player/artists/B083PV5JS6/doidon-pixote-e-os-van-der-zicrey">
-                <img src="/images/SVG/Amazon.svg" alt="amazon"
-                  style={{ borderRadius: 5, border: '1px solid white' }}
-                />
-              </Link>
-            </Grid>
+            {musicPlayers.map((item, index) => (
+              <Grid item direction="row" key={index}>
+                <Link
+                  target="_blank"
+                  href={item.url}
+                >
+                  <img src={item.src} alt={item.alt}
+                    style={{ borderRadius: 5, border: '1px solid white' }}
+                  />
+                </Link>
+              </Grid>
+            ))
+            }
           </Grid>
 
         </Stack>
