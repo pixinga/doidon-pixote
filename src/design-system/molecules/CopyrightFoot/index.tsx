@@ -25,7 +25,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
                         <a href="http://cortesdev.de" target="_blank">{' '} CortesDev.de</a></Typography>
                 </Grid>
 
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                     <Copyright />
                 </Grid>
             </Grid>

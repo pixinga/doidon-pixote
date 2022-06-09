@@ -53,25 +53,28 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                     <Grid item xs={12} md={3}>
                         <Stack direction="column" justifyContent="space-between" >
 
-                            <List style={{ minWidth: '100px', maxWidth: '200px', marginLeft: isMobile ? 'start' : 'auto' }}>
+                            <List style={{ minWidth: '100px', maxWidth: '100%', marginLeft: isMobile ? 'start' : 'auto' }}>
                                 <Stack direction="row">
                                     {linkData.map((item, index) => (
-                                        <Link target="_blank" href={item.url} sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
-                                            <StyledImage src={item.src} alt={item.alt} />
-                                        </Link>
+                                        <Link
+                                            target="_blank" href={item.url}
+                                            width={{xs: '30%', md: 'inherit'}}
+                                            sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
+                                    <StyledImage src={item.src} alt={item.alt} />
+                                </Link>
                                     ))}
-                                </Stack>
-                            </List>
                         </Stack>
-
-                        <HashLink to="#home" smooth>
-                            <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
-                        </HashLink>
-
-                    </Grid>
-                </Grid>
+                    </List>
             </Stack>
-        </StyledFooter>
+
+            <HashLink to="#home" smooth>
+                <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
+            </HashLink>
+
+        </Grid>
+                </Grid >
+            </Stack >
+        </StyledFooter >
     )
 }
 

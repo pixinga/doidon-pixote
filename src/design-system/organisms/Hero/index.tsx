@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Grid, Link, Stack } from '@mui/material'
+import { Box, Grid, Link, Stack } from '@mui/material'
 import { FC } from 'react'
 import { FlexSpacer } from '../../atoms/FlexSpacer'
 import Typography from '../../atoms/Typography'
@@ -30,6 +30,10 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
 
   const HeroCenter = styled(Stack)`
     margin: 0 3rem;
+
+    @media (max-width: 600px) {
+      margin: 0 1.5rem;
+    }
   `
 
   return (
@@ -44,21 +48,25 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
         <Stack direction="column" marginTop={{ xs: '0', md: "auto" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
 
           {!isMobile ? <>
-            <Typography size='h3' weight='old'>Bem-vindo ao</Typography>
+            <Box ml={{xs: 1, md: 1.5}}>
 
-            <Typography size='h1' weight='old'
-              sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
-              Doidon Pixote</Typography>
-            <Typography size='h2' weight='old'> e os Van der Zicrey</Typography>
+              <Typography size='h3' weight='old' mb={2}>Bem-vindo ao</Typography>
+
+              <Typography size='h1' weight='old'
+                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
+                Doidon Pixote</Typography>
+              <Typography size='h2' weight='old'> e os Van der Zicrey</Typography>
+            </Box>
           </>
             : <>
-              <Typography size='h3' weight='old'>Bem-vindo ao</Typography>
+              <Typography size='h3' weight='old' mb={1}>Bem-vindo ao</Typography>
+
               <Typography size='h2' weight='old'>Doidon Pixote</Typography>
               <Typography size='h3' weight='old'> e os Van der Zicrey</Typography>
             </>
           }
 
-          <Grid container spacing={2} rowSpacing={2} mt={3} mb={5} maxWidth={{ xs: "70%" }}>
+          <Grid container spacing={2} rowSpacing={2} ml={{ xs: .5 }} mt={3} mb={5} maxWidth={{ xs: "70%" }}>
 
             <Grid item direction="row">
 
