@@ -1,12 +1,12 @@
 export const agendaShows = [
     {
-        dia: '23',
+        dia: '19',
         mes: 'Junho',
         local: 'Heavy Beer - Rua Ceara',
         hora: '17:00'
     },
     {
-        dia: '16',
+        dia: '23',
         mes: 'Julho',
         local: 'Audio Rebel - Botafogo',
         hora: '18:00'
