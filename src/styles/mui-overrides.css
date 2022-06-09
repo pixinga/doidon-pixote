@@ -133,3 +133,9 @@ color: white;
   overflow-x: initial;
 }
 
+@media (max-width: 600px) {
+  :root .MuiGrid-root .MuiGrid-item {
+     padding-left: 0;
+   }
+ }
+ 
