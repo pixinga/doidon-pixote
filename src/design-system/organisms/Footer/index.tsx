@@ -29,14 +29,16 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
         }
     `
     const StyledImage = styled.img`
-       width: 20px;
-       filter: invert(1);
+        width: 30px;
+        background: white;
+        border-radius: 50px;
+        padding: 4px;
     `
 
     const linkData = [
         { src: '/images/SVG/twitter.svg', alt: 'twitter', url: 'https://www.twitter.com/doidonpixote' },
         { src: '/images/SVG/facebook.svg', alt: 'facebook', url: 'https://www.facebook.com/doidonpixote' },
-        { src: '/images/SVG/insta.svg', alt: 'insta', url: 'https://www.instagram.com/doidonpix/' },
+        { src: '/images/SVG/insta.svg', alt: 'insta', url: 'https://www.instagram.com/doidonpixote' },
         { src: '/images/SVG/spotify.svg', alt: 'spotify', url: 'https://open.spotify.com/artist/1H3kmZKczSXJ2jum4zrqR3' },
     ]
 
@@ -69,7 +71,10 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                         </Stack>
 
                         <HashLink to="#home" smooth>
-                            <img src="/images/SVG/logo-rot.svg" alt="logo" height={100} style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
+                            <img src="/images/SVG/logo-rot.svg"
+                                alt="logo"
+                                height={100}
+                                style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
                         </HashLink>
 
                     </Grid>
