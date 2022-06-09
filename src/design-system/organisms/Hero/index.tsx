@@ -65,7 +65,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
               <Link
                 target="_blank"
                 href="https://open.spotify.com/artist/1H3kmZKczSXJ2jum4zrqR3">
-                <img src="/images/SVG/Spotify.svg" alt="spotify"
+                <img src="/images/SVG/playSpotify.svg" alt="spotify"
                   style={{ borderRadius: 5, border: '1px solid white' }}
                 />
               </Link>

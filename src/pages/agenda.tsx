@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { List, ListItem, Stack, useMediaQuery } from '@mui/material'
+import { Divider, List, ListItem, Stack, useMediaQuery } from '@mui/material'
 import React, { FC } from 'react'
 import { FlexSpacer } from '../design-system/atoms/FlexSpacer'
 import Typography from '../design-system/atoms/Typography'
@@ -35,22 +35,22 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
       <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" >
         {!isMobile &&
           <img src="/images/foto_vert.jpg" alt="logo" width="50%" />
-          // <ImgSwiper />
-
         }
 
+        <Divider orientation="vertical"  style={{borderColor: "rgba(255, 255, 255, .2)"}} flexItem />
+ 
         <Stack direction="column" width={{ xs: '100%', md: '41%' }}>
           <iframe title="spotify" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/artist/1H3kmZKczSXJ2jum4zrqR3?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
           <StyledList>
 
-            <Typography size="h3" weight='old' ml={3} mb={3}>
+            <Typography size="h3" weight='old' mb={3}>
               Proximos eventos
             </Typography>
 
             {agendaShows.map((item, index) =>
-              <ListItem key={index}>
-                <Stack direction='row' justifyContent={'start'} p="0 1rem" width="100%">
+              <ListItem key={index} sx={{paddingLeft: 0}}>
+                <Stack direction='row' justifyContent={'start'} p="0 1rem 0 0 " width="100%">
 
                   <Stack direction="column" alignItems="center">
                     <Typography size="h2" weight='old'>
