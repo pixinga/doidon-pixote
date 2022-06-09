@@ -6,7 +6,7 @@ export const agendaShows = [
         hora: '17:00'
     },
     {
-        dia: '16',
+        dia: '23',
         mes: 'Julho',
         local: 'Audio Rebel - Botafogo',
         hora: '18:00'
