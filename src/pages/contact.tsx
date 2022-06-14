@@ -99,7 +99,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
         <Grid item xs={12} md={4}>
 
           <Typography size='h3' weight='old'>
-            Loja:
+            Loja
           </Typography>
 
           <Typography size='h4' weight='old'>
