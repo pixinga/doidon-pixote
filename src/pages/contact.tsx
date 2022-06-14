@@ -33,7 +33,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
 
       <FlexSpacer minHeight={3} />
 
-      <Grid container>
+      <Grid container rowSpacing={3}  >
         <Grid item xs={12} md={4}>
 
           <Typography size='h3' weight='old'>
@@ -97,7 +97,6 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
         </Grid>
 
         <Grid item xs={12} md={4}>
-
           <Typography size='h3' weight='old'>
             Loja
           </Typography>
