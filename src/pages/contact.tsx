@@ -24,7 +24,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
   `
 
   return (
-    <Container id="contact" mb={4}>
+    <Container id="contact" className="footer" mb={4}>
       <FlexSpacer minHeight={5} />
 
       <Typography size='h2' weight='old'>
@@ -47,7 +47,12 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           <FlexSpacer minHeight={3} />
 
           <Typography size='body'>
-            <Link href={`mailto:contato@casa33.rio`}> contato@casa33.rio</Link>
+            <Link
+              display="flex"
+              href={`mailto:contato@casa33.rio`}>
+              <img src="/images/SVG/mail.svg" color="white" alt="share" style={{ marginRight: '10px', width: 22 }} />
+              contato@casa33.rio
+            </Link>
           </Typography>
           <FlexSpacer minHeight={1} />
 
@@ -73,7 +78,10 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           <FlexSpacer minHeight={3} />
 
           <Typography size='body'>
-            <Link> contato@casa33.rio</Link>
+            <Link display="flex">
+              <img src="/images/SVG/mail.svg" color="white" alt="share" style={{ marginRight: '10px', width: 22 }} />
+              contato@casa33.rio
+            </Link>
           </Typography>
           <FlexSpacer minHeight={1} />
 
@@ -96,8 +104,13 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
 
           <FlexSpacer minHeight={3} />
 
-          <Typography size='h6'>
-            {'Mercado Livre [em breve]'}
+          <Typography paragraph>
+            <Link
+              display="flex"
+              target="_blank" href="https://produto.mercadolivre.com.br/MLB-2674669920-camisa-doidon-pixote-xg-_JM?searchVariation=174626582834#searchVariation=174626582834&position=3&search_layout=stack&type=item&tracking_id=418c8d12-6aa7-4345-8485-6fb2ee49bd20">
+              <img src="/images/SVG/External.svg" color="white" alt="share" style={{ marginRight: '10px', width: 18 }} />
+              Mercado livre
+            </Link>
           </Typography>
           <FlexSpacer minHeight={6} />
         </Grid>

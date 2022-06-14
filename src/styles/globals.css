@@ -145,7 +145,10 @@ ul {
   font-family: 'doidon regular', -apple-system, BlinkMacSystemFont, Helvetica, Helvetica Neue, sans-serif;
 }
 
-
+a,
+.MuiTypography-root-MuiLink-root {
+  color: white !important;
+}
 
 .Carousel-indicators-2 {
   margin-top: -2rem !important;
