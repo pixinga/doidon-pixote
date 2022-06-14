@@ -139,3 +139,7 @@ color: white;
    }
  }
  
+
+ :root .MuiPaper-root.MuiDrawer-paper {
+  background-color: black !important;
+ }

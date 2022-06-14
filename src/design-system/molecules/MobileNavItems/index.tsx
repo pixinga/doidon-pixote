@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { HashLink as Link } from 'react-router-hash-link';
+import Typography from "../../atoms/Typography";
 
 
 const drawerWidth = '100%';
@@ -160,6 +161,13 @@ export const MobileNavItems: FC = ({ ...props }) => {
           <StyledListItem sx={{ paddingLeft: '12px' }}>
             <div style={{ display: 'inline-flex' }}  >
               <ListItemText primary="Contato" sx={{ fontSize: '14px' }} />
+            </div>
+          </StyledListItem>
+          <StyledListItem sx={{ paddingLeft: '12px' }}>
+            <div style={{ display: 'inline-flex' }}  >
+              <a rel="noreferrer" target="_blank" href="https://produto.mercadolivre.com.br/MLB-2674669920-camisa-doidon-pixote-xg-_JM?searchVariation=174626582834#searchVariation=174626582834&position=3&search_layout=stack&type=item&tracking_id=418c8d12-6aa7-4345-8485-6fb2ee49bd20">
+                <ListItemText primary="loja" />
+              </a>
             </div>
           </StyledListItem>
         </Link>
