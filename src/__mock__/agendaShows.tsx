@@ -6,10 +6,10 @@ export const agendaShows = [
         hora: ''
     },
     {
-        dia: '08',
-        mes: 'outubro',
-        local: 'Leviano - Lapa - Com Matanza Inc',
-        hora: '22:00'
+        dia: '13',
+        mes: 'Janeiro',
+        local: 'Casa 33 - Botafogo',
+        hora: '18:00'
     },
     {
         dia: '',
