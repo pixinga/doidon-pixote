@@ -12,7 +12,6 @@ interface ParceriasProps {
 
 
 const marcas = [
-  { url: '/images/casa33.png', height: '30px', nome: '', contrast: 'dark' },
   { url: '/images/SVG/logo-doidon-white.svg', height: '30px', nome: '', contrast: '' },
   { url: '/images/SVG/logo-doidon-white.svg', height: '30px', nome: '', contrast: '' },
   { url: '/images/SVG/logo-doidon-white.svg', height: '30px', nome: '', contrast: '' },

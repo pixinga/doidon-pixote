@@ -6,12 +6,6 @@ export const agendaShows = [
         hora: ''
     },
     {
-        dia: '13',
-        mes: 'Janeiro',
-        local: 'Casa 33 - Botafogo',
-        hora: '18:00'
-    },
-    {
         dia: '',
         mes: '',
         local: '',
