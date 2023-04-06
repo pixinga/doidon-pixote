@@ -36,7 +36,7 @@ const Videos: FC<VideosProps> = ({ pageWidth }) => {
                     <iframe width="90%" height="315" src="https://www.youtube.com/embed/zIB802dOk0A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <iframe width="90%" height="315" src="https://www.youtube.com/watch?v=AkS4Uit0UXM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/AkS4Uit0UXM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <iframe width="90%" height="315" src="https://www.youtube.com/embed/ROSaLO8W2rY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
